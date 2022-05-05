@@ -29,7 +29,9 @@ const UploadWidget = ({
   multiple = false,
   buttonType = 'button',
   destroy = false,
-  autoClose = true
+  autoClose = true,
+  croppingAspectRatio = 1.778,
+  croppingShowDimensions = true
 }) => {
   // * put all new variables at the end
   const myWidgetFunction = () =>
@@ -57,7 +59,9 @@ const UploadWidget = ({
       multiple,
       widgetStyles,
       destroy,
-      autoClose
+      autoClose,
+      croppingAspectRatio,
+      croppingShowDimensions
     )
 
   return (
