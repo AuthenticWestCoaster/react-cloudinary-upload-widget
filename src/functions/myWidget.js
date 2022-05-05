@@ -36,7 +36,7 @@ const myWidget = (
         showCompletedButton: true,
         multiple: multiple,
         singleUploadAutoClose: autoClose,
-        showAdvancedOptions: true,
+        showAdvancedOptions: false,
         showPoweredBy: false,
         styles: widgetStyles,
         googleDriveClientId: googleDriveClientId,
