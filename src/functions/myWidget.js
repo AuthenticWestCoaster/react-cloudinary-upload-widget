@@ -25,7 +25,9 @@ const myWidget = (
   multiple,
   widgetStyles,
   destroy,
-  autoClose
+  autoClose,
+  croppingAspectRatio,
+  croppingShowDimensions
 ) => {
   const widget =
     !!window.cloudinary &&
@@ -45,6 +47,8 @@ const myWidget = (
         folder: folder,
         cropping: cropping,
         resourceType: resourceType,
+        croppingAspectRatio: croppingAspectRatio,
+        croppingShowDimensions: croppingShowDimensions,
         ...(generateSignatureUrl && { use_filename: use_filename }),
         ...(generateSignatureUrl && { eager: eager }),
         ...(generateSignatureUrl && { unique_filename: unique_filename }),
